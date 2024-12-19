@@ -445,16 +445,16 @@ public static void XY_FlightDetailsSending_Economy(WebDriver driver,Database Pnr
 				         
 			        }
 				 
-				 
+				 //61 Riyadh RUH 00:35 2 0 Jeddah JED 02:35 299.00
 				 //System.out.println("FLIGHT NOOO:"+FlightNum);
-				 EndTime= s.split(" ")[6];
-				 JournyTimeHours=s.split(" ")[3];
-				 JournyTimeMin=s.split(" ")[4];
-				String PlusOne= s.split(" ")[7];
+				 EndTime= s.split(" ")[8];
+				 JournyTimeHours=s.split(" ")[4];
+				 JournyTimeMin=s.split(" ")[5];
+				String PlusOne= s.split(" ")[9];
 				String Seats = "9";	
 				
 				String[] splitArr = s.split(" ");
-				if (splitArr.length >= 10) {
+				if (splitArr.length >= 12) {
 				    //Seats = splitArr[9];
 					for (int i = 0; i < splitArr.length; i++) {
 					    if ("Only".equals(splitArr[i]) && i + 1 < splitArr.length) {
@@ -470,8 +470,8 @@ public static void XY_FlightDetailsSending_Economy(WebDriver driver,Database Pnr
 				{
 					
 				 DataChanege="1";
-				 economy=s.split(" ")[8];
-				 if (splitArr.length >= 10) {
+				 economy=s.split(" ")[10];
+				 if (splitArr.length >= 12) {
 					    //Seats = splitArr[10];
 					  for (int i = 0; i < splitArr.length; i++) {
 					     if ("Only".equals(splitArr[i]) && i + 1 < splitArr.length) {
@@ -499,7 +499,7 @@ public static void XY_FlightDetailsSending_Economy(WebDriver driver,Database Pnr
 				}
 				else{
 					
-					 economy=s.split(" ")[7];
+					 economy=s.split(" ")[9];
 					
 					// 57 Riyadh 22:50 2 0 Jeddah 00:50 Soldout 1554.00 Only 1 seats left
 					 if("Soldout".equals(economy))
@@ -548,7 +548,6 @@ public static void XY_FlightDetailsSending_Economy(WebDriver driver,Database Pnr
 
 				    
 				}
-				
 				
 			    
 				     
