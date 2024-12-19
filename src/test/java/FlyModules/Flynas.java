@@ -419,7 +419,7 @@ public static void XY_FlightDetailsSending_Economy(WebDriver driver,Database Pnr
 				// 57 Riyadh 22:50 2 0 Jeddah 00:50 (+1) Soldout 1554.00 Only 1 seats left
 				// 3 Riyadh 05:25 2 0 Jeddah 07:25 409.00 Only 2 seats left 788.00 Only 2 seats left
 				 System.out.println(s);
-				 String StartTime= s.split(" ")[2];
+				 String StartTime= s.split(" ")[3];
 				 FlightNum= s.split(" ")[0];
 				 
 				 
